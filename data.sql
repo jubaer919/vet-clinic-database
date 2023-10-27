@@ -51,3 +51,32 @@ UPDATE animals SET owner_id = 4 WHERE name = 'Charmander' OR name = 'Squirtle' O
 UPDATE animals SET owner_id = 5 WHERE name = 'Angemon' OR name = 'Boarmon';
 
 
+/* day 4 project */
+
+INSERT INTO vets(name, age, date_of_graduation)
+VALUES ('William Tatcher', 45, '2000-04-23'),
+('Maisy Smith', 26, '2019-01-17'),
+('Stephanie Mendez', 64, '1981-05-04'),
+('Jack Harkness', 38, '2008-06-08');
+
+INSERT INTO specializations(species_id, vets_id) SELECT species.id AS species_id, vets.id AS vets_id FROM species, vets WHERE species.name = 'Pokemon' AND vets.name = 'William Tatcher';
+
+INSERT INTO specializations(species_id, vets_id) SELECT species.id AS species_id, vets.id AS vets_id FROM species, vets WHERE  (species.name = 'Digimon' AND vets.name = 'Stephanie Mendez') OR (species.name = 'Pokemon' AND vets.name = 'Stephanie Mendez');
+
+INSERT INTO specializations(species_id, vets_id) SELECT species.id AS species_id, vets.id AS vets_id FROM species, vets WHERE species.name = 'Digimon' AND vets.name = 'Jack Harkness';
+
+INSERT INTO visits (animals_id, vets_id, date_of_visits)
+VALUES (3, 3, '2021-05-04'),
+(8, 4, '2021-02-24'),
+(4, 2, '2019-12-21'),
+(4, 1, '2020-08-10'),
+(4, 2, '2021-04-07'),
+(9, 3, '2019-09-29'),
+(5, 4, '2020-10-03'),
+(5, 4, '2020-11-04'),
+(6, 2, '2019-01-24'),
+(6, 2, '2019-05-15'),
+(6, 2, '2020-02-27'),
+(6, 2, '2020-08-03'),
+(10, 3, '2020-05-24'),
+(10, 1, '2021-01-11');
