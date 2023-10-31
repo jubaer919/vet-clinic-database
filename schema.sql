@@ -47,3 +47,7 @@ CREATE TABLE visits(animals_id BIGINT, vets_id BIGINT, date_of_visits DATE, PRIM
 ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 CREATE INDEX animals_id_asc_order ON visits (animals_id ASC);
+
+/* Henary Update*/
+CREATE INDEX vets_id_asc_order ON visits (vets_id ASC);
+CREATE INDEX owner_email ON oweners (email ASC);
