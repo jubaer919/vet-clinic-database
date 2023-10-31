@@ -41,3 +41,9 @@ CREATE TABLE specializations(species_id BIGINT, vets_id BIGINT, PRIMARY KEY(spec
 
 CREATE TABLE visits(animals_id BIGINT, vets_id BIGINT, date_of_visits DATE, PRIMARY KEY(animals_id, vets_id), FOREIGN KEY(animals_id) REFERENCES animals(id), FOREIGN KEY(vets_id) REFERENCES vets (id));
 
+
+/* day 1 week 2 project */
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX animals_id_asc_order ON visits (animals_id ASC);
