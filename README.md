@@ -108,13 +108,19 @@ You can deploy this project using: [render](https://render.com/)
 
 <!-- AUTHORS -->
 
-## 👥 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
 👤 **Jubaer Maruf**
 
 - GitHub: [jubaer_Maruf](https://github.com/jubaer919)
 - Twitter: [@jubaer_maruf](https://twitter.com/jubaer_maruf)
 - LinkedIn: [Jubaer Maruf](https://www.linkedin.com/in/jubaer-maruf/)
+
+👤 **Khuraijam Henary Singh**
+
+- GitHub: [@HenaryKhuraijam](https://github.com/HenaryKhuraijam)
+- Twitter: [@HenaryKhuraijam](https://twitter.com/HenaryKhuraijam)
+- LinkedIn: [Henary Khuraijam](https://www.linkedin.com/in/henary-khuraijam-50487317a)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
